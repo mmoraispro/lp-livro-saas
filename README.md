@@ -1,36 +1,86 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# LivroSaaS - Landing Page com Next.js
 
-## Getting Started
+Este é um projeto desenvolvido como parte do desafio [Landing Page SaaS com Next.js](https://github.com/codante-io/mp-saas-landing-page-com-nextjs) do Codante.
 
-First, run the development server:
+## 🚀 Tecnologias Utilizadas
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- Next.js 15.1.0
+- React 19
+- TypeScript
+- Tailwind CSS
+- Shadcn/ui
+- Lucide Icons
+
+## 💻 Sobre o Projeto
+
+LivroSaaS é uma landing page fictícia para um serviço de assinatura de ebooks de programação. O projeto foi desenvolvido utilizando as melhores práticas de desenvolvimento web moderno, incluindo:
+
+- Design responsivo
+- Componentes reutilizáveis
+- Tipografia otimizada com Next/font
+- Interface moderna e clean
+- Animações suaves
+
+## 🎯 Funcionalidades
+
+- Header com navegação responsiva
+- Seção Hero com formulário de captura
+- Seção "Como funciona"
+- Seção de Preços
+- Call-to-action (CTA)
+- Footer
+
+## 🚀 Como Executar
+
+1. Clone o repositório
+2. Instale as dependências:
+
+```powershell
+cd lp-livro-saas
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+3. Execute o servidor de desenvolvimento:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```powershell
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. Abra [http://localhost:3000](http://localhost:3000) no seu navegador.
 
-## Learn More
+## 📝 Estrutura do Projeto
 
-To learn more about Next.js, take a look at the following resources:
+O projeto segue a estrutura padrão do Next.js 15.1.0 com App Router:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```
+src/
+├── app/
+│   ├── components/
+│   │   ├── hero.tsx
+│   │   ├── funcionamento.tsx
+│   │   ├── pricing.tsx
+│   │   ├── cta.tsx
+│   │   └── ...
+│   ├── layout.tsx
+│   └── page.tsx
+├── components/
+│   └── ui/
+└── lib/
+    └── utils.ts
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🎨 Customização
 
-## Deploy on Vercel
+O projeto utiliza Tailwind CSS para estilização e pode ser customizado através dos arquivos:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- `tailwind.config.ts` - Configurações do Tailwind
+- `src/app/globals.css` - Estilos globais
+- `components.json` - Configurações do shadcn/ui
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📄 Licença
+
+Este projeto está sob a licença MIT.
+
+---
+
+Desenvolvido como parte do desafio [Landing Page SaaS com Next.js](https://github.com/codante-io/mp-saas-landing-page-com-nextjs) do Codante.
