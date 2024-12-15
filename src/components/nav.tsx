@@ -30,8 +30,8 @@ export default function Nav() {
         `}
       >
         <li className="w-full md:w-auto">
-          <Link 
-            href={"#funcionamento"} 
+          <Link
+            href={"/#funcionamento"}
             className="block py-2 hover:text-primary transition-colors"
             onClick={() => setIsMenuOpen(false)}
           >
@@ -39,8 +39,8 @@ export default function Nav() {
           </Link>
         </li>
         <li className="w-full md:w-auto">
-          <Link 
-            href={"#pricing"} 
+          <Link
+            href={"/#pricing"}
             className="block py-2 hover:text-primary transition-colors"
             onClick={() => setIsMenuOpen(false)}
           >
@@ -48,13 +48,15 @@ export default function Nav() {
           </Link>
         </li>
         <li className="w-full md:w-auto">
-          <Button 
-            variant="outline" 
-            className="w-full md:w-auto"
-            onClick={() => setIsMenuOpen(false)}
-          >
-            Login
-          </Button>
+          <Link href={"/login"}>
+            <Button
+              variant="outline"
+              className="w-full md:w-auto"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Login
+            </Button>
+          </Link>
         </li>
       </ul>
     </nav>
